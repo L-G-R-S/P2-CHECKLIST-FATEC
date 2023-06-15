@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --main-colorae: #002E44;
+  --main-colora:#00A3D8;
+  --main-colorb:#ffffff;
+}
+
+
+body {
+  background-color: var(--main-colorae);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+/*
+.card {
+  background-color: rgba(00,46,68,0.9);
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+}
+*/
+
+
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--main-colorb);
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid var(--main-colorb);
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid var(--main-colorb);
+}
+
+.label-float label{
+  color: var(--main-colorb);
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: var(--main-colora);
+}
+
+button{
+  background-color: transparent;
+  border-color: var(--main-colora);
+  color: var(--main-colorb);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: var(--main-colora);
+  color: var(--main-colorb);
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p{
+  color: var(--main-colorb);
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: var(--main-colora);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: var(--main-colorb);
+}
+
+.fa-eye, .fa-eye-slash{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: var(--main-colorb);
+}
+
+
+
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 4px;
+  display: none;
+}
+input { color: var(--main-colorb) }
+
+
+/* Media queries para ajustar o layout em diferentes tamanhos de tela */
+    /* Layout para telas pequenas */
+    @media (max-width: 400px) {
+      .card {
+        width: 70%;
+      }
+    }
+
+    #logo{
+      display: block;
+      margin: 0px auto;
+      width: 200px;
+      height: 200px;
+        
+    }

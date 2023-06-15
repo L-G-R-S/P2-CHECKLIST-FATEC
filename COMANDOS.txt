@@ -1,0 +1,32 @@
+npm init -y
+
+npm install express
+
+npm install mysql2
+
+npm install nodemon -D
+
+npm install dotenv
+
+npx eslint --init
+
+
+banco: mysql://bc019dd4e5e65e:bad02755@us-cdbr-east-06.cleardb.net/heroku_85fae9666504b15?reconnect=true
+
+host: us-cdbr-east-06.cleardb.net
+
+username: bc019dd4e5e65e
+
+senha: bad02755
+
+banconame: heroku_85fae9666504b15
+
+
+SUBIR ARQUIVO:
+rd .git /S/Q
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/L-G-R-S/P2-TODOLIST-FATEC.git
+git push -u origin main

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE TAREFAS </title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Check List - APP </title>
+
+        <link rel="stylesheet" href="CSS/index.css">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    </head>
+
+    <body>
+
+         <!--=============== HEADER ===============-->
+         <header class="header" id="header">
+            <nav class="nav container">
+                <!--<img src="IMG/perfil.png" alt="" class="nav__img">-->
+                <a href="#" class="nav__logo" id="logado"></a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link" onclick='sair()' >
+                                <i class='bx bx-log-out nav__icon'></i>
+                                <span class="nav__name">Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </nav>
+        </header>
+
+        
+
+        <main>
+            <h1 id="title_checklist" >CheckList</h1>
+            <form class="add-form">
+                <input type="text" placeholder="Adicionar tarefa" class="input-task">
+                <button type="submit">+</button>
+            </form>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Criada em</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Realizar o trabalho de tópicos especiais do professor Honorato</td>
+                        <td>12/04/2023</td>
+                        <td>
+                            <select>
+                                <option value="pendente">pendente</option>
+                                <option value="em andamento">em andamento</option>
+                                <option value="concluída">concluída</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <button class="btn-action"><span class="material-symbols-outlined">edit</span></button>
+                            <button class="btn-action"><span class="material-symbols-outlined">delete</span></button>
+                        </td>
+
+
+                    </tr>
+                </tbody>
+
+            </table>      
+        </main>
+
+
+
+        <script src="JS/index.js"></script>
+    </body>
+
+    </html>
